@@ -15,6 +15,9 @@ import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
+import IslandSnow from '../pages/IslandSnow';
+import TopMenu from '../components/TopMenu';
+import FooterMenu from '../components/FooterMenu';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -22,9 +25,9 @@ class App extends React.Component {
     return (
         <Router>
           <div>
-            <NavBar/>
+            <Route exact path="/" component={TopMenu}/>
             <Switch>
-              <Route exact path="/" component={Landing}/>
+              <Route exact path="/" component={IslandSnow}/>
               <Route path="/signin" component={Signin}/>
               <Route path="/signup" component={Signup}/>
               <ProtectedRoute path="/list" component={ListStuff}/>
@@ -34,7 +37,7 @@ class App extends React.Component {
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>
-            <Footer/>
+            <Route exact path="/" component={FooterMenu}/>
           </div>
         </Router>
     );

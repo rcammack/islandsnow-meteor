@@ -1,0 +1,28 @@
+.ui.menu.topMenu {
+  background-color: rgb(245, 245, 245);
+  border: none;
+  box-shadow: none;
+}
+
+.ui.dropdown.fitted.item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ui.menu.mainMenu {
+  border: none;
+  box-shadow: none;
+  margin-left: 410px;
+}
+
+.grey-background {
+  background-color: #292929;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.ui.input .label {
+  background-color: black;
+  color: rgb(245, 245, 245);
+}
